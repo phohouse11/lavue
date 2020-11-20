@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<title>Lavue Nail Lounge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    /* body,
+    html {
+        height: 100%
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Amatic SC", sans-serif
+    }
+    
+    .menu {
+        display: none
+    }
+    
+    .bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./images/9.jpg");
+        min-height: 90%;
+    } */
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button nav-bar">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button nav-bar">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button nav-bar">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button nav-bar">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">Open from 9:00am to 7pm</span>
+        </div>
+        <div class="w3-display-bottommiddle w3-center">
+
+            <p><a href="#menu" class="w3-button w3-xxlarge w3-gray">full Service Menu</a></p>
+            <p><a href="Appointment Now" class="w3-button w3-xxlarge w3-red">Appointment Now</a></p>
+        </div>
+    </header>
+    <!-- Video -->
+    <div class="container-fluid  ">
+        <div class="row" style="height:auto">
+            <div class="col-3 w3-blue-grey">
+
+            </div>
+            <div class="col-6 embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="./nail3.mp4" allowfullscreen></iframe>
+            </div>
+            <div class="col-3 w3-blue-grey">
+
+            </div>
+        </div>
+    </div>
+    <!--  End Video -->
+    <!-- Menu Container -->
+    <div class="w3-containerw3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo  " style="margin-bottom:65px">MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Manicure');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red  a-menu">Manicure</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pedicure');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red  a-menu">Pedicure</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Waxing');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red a-menu">Waxing</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Nails Extension');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red a-menu">Nails Extension</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Gel Nails');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red a-menu">Gel Nails</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Eyelash Extension');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red a-menu">Eyelash</div>
+                </a>
+            </div>
+
+            <div id="Manicure" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17</span></h1>
+                <p class="w3-text-grey">Includes: Nail trimming, Shaping, Cuticles grooming, Hand Massage, and Polish</p>
+                <hr>
+
+                <h1><b>Luxury Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$27</span></h1>
+                <p class="w3-text-grey"> Includes: Nail trimming, Shaping, Cuticles grooming,xtra-Hand Massage,parafin-wax, hot towel, and Polis, </p>
+                <hr>
+
+                <h1><b>classic Manicure & Gel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$32</span></h1>
+                <p class="w3-text-grey">Includes: Nail trimming, Shaping, Cuticles grooming, Hand Massage, and GEL Polish</p>
+                <hr>
+
+
+
+                <h1><b>Dipping Gel</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$37</span></h1>
+                <p class="w3-text-grey">next generate of Gel nails. Includes classic Manicure, and Dipping Gel </p>
+                <hr>
+
+
+            </div>
+
+            <div id="Pedicure" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Pedicure</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$28</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Lotion Massage,Hot towel, and Polish</p>
+                <hr>
+
+                <h1><b>Classic Pedicure and Gel polish</b> <span class="w3-tag w3-red w3-round">HOT!</span> <span class="w3-right w3-tag w3-red w3-round">$42</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Lotion Massage,Hot towel, and Gel Polish</p>
+                <hr>
+
+
+                <h1><b>Luxury Lavender Pedicure</b> <span class="w3-tag w3-purple w3-round">The Relax</span> <span class="w3-right w3-tag w3-purple w3-round">$35</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Foot Mask with massage, deep Lotion foot Massage, and Hot towel, and polish</p>
+                <hr>
+
+                <h1><b>Deluxe Sensory Pedicure</b> <span class="w3-tag w3-pink w3-round">The Pink Day!</span> <span class="w3-right w3-tag w3-pink w3-round">$35</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Foot Mask with massage, deep Lotion foot Massage, and Hot towel, and polish</p>
+                <hr>
+
+
+                <h1><b>Organic Citrus Pedicure</b> <span class="w3-tag w3-orange w3-round">I LOVE Citrus</span> <span class="w3-right w3-tag w3-orange w3-round">$48</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak and soak your feet in a lavish citrus bath made with fresh Organe/grapefruit slices, hot towel.The natural acids will exfoliate your feet and legs while covering with an invigorating citrus smell.Included in
+                    this pedicures is exfoliation with our organic suger scrub, hot stone massage and ending with a moisturzing foot mask, and polish</p>
+                <hr>
+
+
+                <h1><b>Lavue Signature Spa Pedicure</b> <span class="w3-tag w3-green w3-round">i have a rough day</span> <span class="w3-right w3-tag w3-green w3-round">$58</span></h1>
+                <p class="w3-text-grey">Anti-bacterial Soak, trim and shape toe nail, soften and treat cuticles, callus removal and treatment, pumice stone, sea salt foot crub massage, cooling gel massage, therapeutic oil massage, enjoy hot stone massage & after that, with deep
+                    paraffin wax, mineral foot massage with warm towel and polish </p>
+                <hr>
+
+
+            </div>
+
+
+            <div id="Waxing" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Eyebrown Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12</span></h1>
+
+                <hr>
+
+                <h1><b>Eyebrown Thread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+
+                <hr>
+
+                <h1><b>chin Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10</span></h1>
+
+                <hr>
+
+                <h1><b>Upper Lip Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7</span></h1>
+
+                <hr>
+                <h1><b>Full Face Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$30</span></h1>
+
+                <hr>
+                <h1><b>underarm Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17</span></h1>
+
+                <hr>
+                <h1><b>full Arm Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+
+                <hr>
+                <h1><b>Half Arm Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25</span></h1>
+
+
+            </div><br>
+
+            <div id="Nails Extension" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Acrylic Full Set</b> <span class="w3-right w3-tag w3-pale-red w3-round">New-$27</span>
+                    <hr> <span class="w3-right w3-tag w3-pale-red w3-round">Fill-$20</span></h1>
+                <p class="w3-text-grey">Remove old nail polish, Trim your nails, Buff the surface of your nails, Push back your cuticles, Use the nail primer, Apply nail tips, Applying the Acrylic, Finishing the Nails, Paint your nails, Maintain your acrylic nails. After about
+                    two weeks, your nails have grown out. Choose to either reapply acrylic or remove the acrylic from your nails.
+                </p>
+                <hr>
+
+                <h1><b>Full Set Dipping Gel</b> <span class="w3-right w3-tag w3-pale-red w3-round">New-$42</span>
+                    <hr> <span class="w3-right w3-tag w3-pale-red w3-round">No-refill Dipping</span></h1>
+                <p class="w3-text-grey">Remove old nail polish, Trim your nails, Buff the surface of your nails, Push back your cuticles, Use the nail primer, Apply nail tips, Applying the Acrylic, Finishing the Nails, Paint your nails, Maintain your acrylic nails. After about
+                    two weeks, your nails have grown out. Choose to either reapply acrylic or remove the acrylic from your nails.
+                </p>
+                <hr>
+
+                <h1><b>Pink and White Full Set</b> <span class="w3-right w3-tag w3-pale-red w3-round">New-$47</span>
+                    <hr> <span class="w3-right w3-tag w3-pale-red w3-round">Pink Fill-$25; Back Fill-$40</span></h1>
+                <p class="w3-text-grey">Remove old nail polish, Trim your nails, Buff the surface of your nails, Push back your cuticles, Use the nail primer, Apply nail tips, Applying the Acrylic, Finishing the Nails, Paint your nails, Maintain your acrylic nails. After about
+                    two weeks, your nails have grown out. Choose to either reapply acrylic or remove the acrylic from your nails.
+                </p>
+                <hr>
+
+
+                <h1><b>Acrylic Full Set</b> <span class="w3-right w3-tag w3-pale-red w3-round">New-$27</span>
+                    <hr> <span class="w3-right w3-tag w3-pale-red w3-round">Fill-$20</span></h1>
+                <p class="w3-text-grey">Remove old nail polish, Trim your nails, Buff the surface of your nails, Push back your cuticles, Use the nail primer, Apply nail tips, Applying the Acrylic, Finishing the Nails, Paint your nails, Maintain your acrylic nails. After about
+                    two weeks, your nails have grown out. Choose to either reapply acrylic or remove the acrylic from your nails.
+                </p>
+                <hr>
+
+
+            </div>
+
+            <div id="Gel Nails" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16</span></h1>
+                <p class="w3-text-grey">Cut, Shape, Cuticles treatment, Hand Massage, Polish</p>
+                <hr>
+
+                <h1><b>Pedicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+
+                <h1><b>Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+
+                <h1><b>Nail Extension</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+
+                <h1><b>Gel Nails</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+
+                <h1><b>Eyelash Extension</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+
+            <div id="Eyelash Extension" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16</span></h1>
+                <p class="w3-text-grey">Cut, Shape, Cuticles treatment, Hand Massage, Polish</p>
+                <hr>
+
+                <h1><b>Pedicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+
+                <h1><b>Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+
+                <h1><b>Nail Extension</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+
+                <h1><b>Gel Nails</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+
+                <h1><b>Eyelash Extension</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About Lavue Nail Lounge</h1>
+            <p>La Vue Nail Lounge, Inc. is built on a fairly new but proven successful nail salon concept worldwide called Nail Lounge or Nail Bar. A few years ago, the nail salon industry grew from an affordable service catering mostly to low and middle-income
+                clients with very basic nail services to a high-end, luxury service to include many other pampering services including skin care, massage therapy, laser hair removing, micro blading, eyelash extensions and cosmetic tattooing to capture
+                the high-end client segment in the market. Customers are being pampered with a full service wine lounge with beers, wines, cocktails and hors d'oeuvres while being service.
+                <p><strong>Why Lavue Nail Lounge?</strong> Lavue Nail Lounge offers a variety of first–class nail services that promotes comfort, beauty, well-being, and health. We use only the most trusted brands in the beauty industry. Our staffs were
+                    trained to follow a proper sanitization protocol that puts our customer’s cleanliness as the number one priority.</p>
+                <img src="./images/5.jpg" style="width:150px" class="w3-circle w3-right" alt="Lavue Nail, Lounge"></p>
+            <p>We are proud of our interiors.</p>
+            <img src="./images/6.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Nail Lounge">
+            <h1><b>Opening Hours</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Monday-Saturday : 9:00am - 7:00pm</p>
+                    <p>Sunday : Please make Appointment</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>2100 34th Street North, Saint Petersburg Florida 33713</p>
+                    <p>(727)-954-3748</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Our Goals Container -->
+    <div class="w3-container w3-padding-64 w3-blue  w3-grayscale w3-xlarge" id="Our Goals">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Goals</h1>
+            <p>La Vue Nail Lounge’s mission is to deliver a level of service found nowhere else in the area. We strive to push the boundaries of beauty with our extraordinary products, exceptional service and dedication to our guests’ well-being... La Vue
+                Nail Lounge endeavors to set the highest standards in pedicures, manicures, nail health, quality products, sanitation, and exemplary client care. We strive to immerse our patrons in a relaxing, joyous, elegantly appointed and memorable
+                esthetic atmosphere
+            </p>
+            <p><strong>Why Lavue Nail Lounge?</strong> Lavue Nail Lounge offers a variety of first–class nail services that promotes comfort, beauty, well-being, and health. We use only the most trusted brands in the beauty industry. Our staffs were trained
+                to follow a proper sanitization protocol that puts our customer’s cleanliness as the number one priority.</p>
+            <img src="./images/7.jpg" style="width:150px" class="w3-circle w3-left" alt="Chef"></p>
+            <p>We are proud of our interiors.</p>
+            <img src="./images/8.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+
+
+
+
+
+
+            <!-- Image of location/map -->
+            <div id="myMap" style="width:100%;height:500px ;display:flex ; justify-content: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.916070890425!2d-82.68339309782469!3d27.791506740383894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e3bab43aaaab%3A0xa58f5a92ee94664d!2s2100%2034th%20St%20N%2C%20St.%20Petersburg%2C%20FL%2033713!5e0!3m2!1sen!2sus!4v1605908120932!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <!-- <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap"> -->
+
+            <!-- Contact -->
+            <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+                <div class="w3-content">
+                    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+
+                    <p>Find us at some address at some place or call us at 727-954-3748</p>
+
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                        <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+                <p>Powered by <a href="https://lavuenails.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Hai CO</a></p>
+            </footer>
+
+            <!-- 
+
+
+             -->
+
+
+
+            <script>
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-red";
+                }
+                document.getElementById("myLink").click();
+            </script>
+
+</body>
+
+</html>

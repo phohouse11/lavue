@@ -1,0 +1,39 @@
+body,
+html {
+    height: 100%
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif
+}
+
+.menu {
+    display: none
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/9.jpg");
+    min-height: 90%;
+}
+
+.bg-video {
+    background-color: #fff;
+    z-index: 3;
+    opacity: 70%;
+}
+
+.a-menu {
+    color: white;
+}
+
+.nav-bar {
+    text-decoration: none;
+}

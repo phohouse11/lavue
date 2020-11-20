@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<title>Lavue Nail Lounge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+    body,
+    html {
+        height: 100%
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Amatic SC", sans-serif
+    }
+    
+    .menu {
+        display: none
+    }
+    
+    .bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Documents/Lavueweb/images/9.jpg");
+        min-height: 90%;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">Open from 9:00am to 7pm</span>
+        </div>
+        <div class="w3-display-bottommiddle w3-center">
+
+            <p><a href="#menu" class="w3-button w3-xxlarge w3-gray">full Service Menu</a></p>
+            <p><a href="Appointment Now" class="w3-button w3-xxlarge w3-red">Appointment Now</a></p>
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:65px">MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Manicure');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Manicure</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pedicure');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pedicure</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Waxing');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Waxing</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Nails Extension');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Nails Extension</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Gel Nails');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Gel Nails</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Eyelash Extension');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Eyelash Extension</div>
+                </a>
+            </div>
+
+            <div id="Manicure" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17</span></h1>
+                <p class="w3-text-grey">Includes: Nail trimming, Shaping, Cuticles grooming, Hand Massage, and Polish</p>
+                <hr>
+
+                <h1><b>Luxury Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$27</span></h1>
+                <p class="w3-text-grey"> Includes: Nail trimming, Shaping, Cuticles grooming,xtra-Hand Massage,parafin-wax, hot towel, and Polis, </p>
+                <hr>
+
+                <h1><b>classic Manicure & Gel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$32</span></h1>
+                <p class="w3-text-grey">Includes: Nail trimming, Shaping, Cuticles grooming, Hand Massage, and GEL Polish</p>
+                <hr>
+
+
+
+                <h1><b>Dipping Gel</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$37</span></h1>
+                <p class="w3-text-grey">next generate of Gel nails. Includes classic Manicure, and Dipping Gel </p>
+                <hr>
+
+
+            </div>
+
+            <div id="Pedicure" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Pedicure</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$28</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Lotion Massage,Hot towel, and Polish</p>
+                <hr>
+
+                <h1><b>Luxury Lavender Pedicure</b> <span class="w3-tag w3-purple w3-round">The Relax</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Foot Mask with massage, deep Lotion foot Massage, and Hot towel, and polish</p>
+                <hr>
+
+                <h1><b>Deluxe Sensory Pedicure</b> <span class="w3-tag w3-pink w3-round">The Relax</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak, Nail trimming, Shaping, Cuticles grooming, Foot Mask with massage, deep Lotion foot Massage, and Hot towel, and polish</p>
+                <hr>
+
+
+                <h1><b>Organic Citrus Pedicure</b> <span class="w3-tag w3-pink w3-round">The Relax</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$48</span></h1>
+                <p class="w3-text-grey">Includes:Anti-bacteria soak and soak your feet in a lavish citrus bath made with fresh Organe/grapefruit slices, hot towel.The natural acids will exfoliate your feet and legs while covering with an invigorating citrus smell.Included in
+                    this pedicures is exfoliation with our organic suger scrub, hot stone massage and ending with a moisturzing foot mask, and polish</p>
+                <hr>
+
+                <h1><b>Lavue Signature Spa Pedicure</b> <span class="w3-tag w3-pink w3-round">The Relax</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$58</span></h1>
+                <p class="w3-text-grey">Anti-bacterial Soak, trim and shape toe nail, soften and treat cuticles, callus removal and treatment, pumice stone, sea salt foot crub massage, cooling gel massage, therapeutic oil massage, enjoy hot stone massage & after that, with deep
+                    paraffin wax, mineral foot massage with warm towel and polish </p>
+                <hr>
+
+
+            </div>
+
+
+            <div id="Waxing" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                <p class="w3-text-grey">Ask the waiter</p>
+                <hr>
+
+                <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                <hr>
+
+                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                <hr>
+
+                <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                <p class="w3-text-grey">Tomatoes and mozzarella</p>
+            </div><br>
+
+            <div id="Nails Extension" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16</span></h1>
+                <p class="w3-text-grey">Cut, Shape, Cuticles treatment, Hand Massage, Polish</p>
+                <hr>
+
+                <h1><b>Pedicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+
+                <h1><b>Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+
+                <h1><b>Nail Extension</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+
+                <h1><b>Gel Nails</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+
+                <h1><b>Eyelash Extension</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+
+            <div id="Gel Nails" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16</span></h1>
+                <p class="w3-text-grey">Cut, Shape, Cuticles treatment, Hand Massage, Polish</p>
+                <hr>
+
+                <h1><b>Pedicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+
+                <h1><b>Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+
+                <h1><b>Nail Extension</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+
+                <h1><b>Gel Nails</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+
+                <h1><b>Eyelash Extension</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+
+            <div id="Eyelash Extension" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Classic Manicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16</span></h1>
+                <p class="w3-text-grey">Cut, Shape, Cuticles treatment, Hand Massage, Polish</p>
+                <hr>
+
+                <h1><b>Pedicure</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <hr>
+
+                <h1><b>Waxing</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                <hr>
+
+                <h1><b>Nail Extension</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <hr>
+
+                <h1><b>Gel Nails</b> <span class="w3-tag w3-red w3-round">hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <hr>
+
+                <h1><b>Eyelash Extension</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <p>The Pho House is a Vietnamese/French restaurant/cafe located in the proposed Shoppes at Twelve Oaks Plaza, Bradenton, Florida. The restaurant features a full menu of moderately priced "comfort" food influenced by Vietnamese and French cooking
+                traditions, but based upon time honored recipes from around the world. The Pho House and cafe features a moderate Vietnamese menu with a full line of dessert Boba drinks, fruit drinks, soft drinks and French coffee. The Pho House Café
+                will be owned and operated by The Pho House Inc., a Florida corporation managed by Christian Tran, a resident of Sarasota, Florida.
+            </p>
+            <p><strong>What is a bowl of Pho?</strong> Pho is served in a bowl with a specific cut of flat rice noodles in clear beef broth, with thin cuts of beef (steak, fatty flank, lean flank, brisket). Variations feature slow-cooked tendon, tripe, or
+                meatballs in southern Vietnam.
+                <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/phobanner.jpg" style="width:150px" class="w3-circle w3-right" alt="Pho"></p>
+            <p>We are proud of our interiors.</p>
+            <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/pho1.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+            <h1><b>Opening Hours</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Tue CLOSED</p>
+                    <p>Wed-Sat 11:00am - 09:00pm</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>Friday 10:00 - 12:00</p>
+                    <p>Saturday 10:00 - 23:00</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Our Goals Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="Our Goals">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Goals</h1>
+            <p>The Pho House Café concept is built upon the success stories of Tampa and St Petersburg many Vietnamese family/casual dining and Vietnamese/French Café venues and Pho Restaurant. Located in the fastest growing and prestigious East Bradenton
+                area near the Manatee Technical Institute, the Lake Erie College of Osteopathic Medicine (LECOM), the YMCA, the American Red Cross Lakewood Ranch Operation and Training Center, the Rosedale development, a community of more than 500 current
+                single family homes and fast growing, the Mallory Park with 430 single family homes, the Savanna with 475 single family homes and the Echo Lakes development with 360 apartment complex, Special Tara and plenty of land for additional development.
+                The Pho House Café will provide accessible and affordable high quality food, Boba- Tapioca, smoothies, and other fruit-based drinks products to the thousands of residents and students located within a five-mile radius. In time, The Pho
+                House Café will establish itself as a "destination" of choice to the many residents of Lakewood Ranch as well as many students of the nearby institutions and tourists. The Pho House cafe's aim is simple. It will provide a completely sophisticated,
+                sensual, yet casual French style dining experience for the many residents and visitors. It will be an affordable venture for patrons, one that will encourage them to return on many occasions. The menu will feature hearty fare of the type
+                that is frequently out of the reach of the typical young professional...out of reach because time frequently prevents her/him from cooking hearty meals like those featured on our menu. Finally, and quite significantly, The Pho House Café
+                will provide a much needed neighborhood based retail food operation that is currently unavailable to Lakewood Ranch neighborhood. It is projected that the business will generate 16 new jobs for the area.
+            </p>
+            <p><strong>What is a bowl of Pho?</strong> Pho is served in a bowl with a specific cut of flat rice noodles in clear beef broth, with thin cuts of beef (steak, fatty flank, lean flank, brisket). Variations feature slow-cooked tendon, tripe, or
+                meatballs in southern Vietnam.
+                <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/ourgoals.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+            <p>We are proud of our interiors.</p>
+            <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/banhmi.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+
+
+
+
+
+
+            <!-- Image of location/map -->
+            <img src="file:///C:/Users/Kacilia/OneDrive%20-%20ITEDU/Desktop/web-test/images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+            <!-- Contact -->
+            <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+                <div class="w3-content">
+                    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+                    <p>Find us at some address at some place or call us at 941-567-6377</p>
+                    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                        <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+            </footer>
+
+            <script>
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-red";
+                }
+                document.getElementById("myLink").click();
+            </script>
+
+</body>
+
+</html>
